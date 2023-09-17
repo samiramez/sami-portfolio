@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 40" width="320" height="40">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 42px;fill: #ffffff;font-weight: 700;font-family: "DejaVuSans-Bold", "DejaVu Sans" } 
+		.t1 { font-size: 42px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t2 { font-size: 42px;fill: #ff0000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+	</style>
+	<text id="sami atanah-li." style="transform: matrix(1,0,0,1,0,0)" >
+		<tspan x="0" y="31.9" class="t0">s</tspan><tspan  y="31.9" class="t0">a</tspan><tspan  y="31.9" class="t0">m</tspan><tspan  y="31.9" class="t0">i</tspan><tspan  y="31.9" class="t1"> </tspan><tspan  y="31.9" class="t1">a</tspan><tspan  y="31.9" class="t1">t</tspan><tspan  y="31.9" class="t1">a</tspan><tspan  y="31.9" class="t1">n</tspan><tspan  y="31.9" class="t1">a</tspan><tspan  y="31.9" class="t1">h</tspan><tspan  y="31.9" class="t2">-</tspan><tspan  y="31.9" class="t1">l</tspan><tspan  y="31.9" class="t1">i</tspan><tspan  y="31.9" class="t2">.
+</tspan>
+	</text>
+</svg>

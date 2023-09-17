@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="220" height="124">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 132px;fill: #ffffff;font-weight: 700;font-family: "DejaVuSans-Bold", "DejaVu Sans" } 
+		.t1 { font-size: 132px;fill: #ffffff;font-weight: 400;font-family: "DevroyeUnicode", "Devroye Unicode" } 
+		.t2 { font-size: 132px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t3 { font-size: 132px;fill: #ff0000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+	</style>
+	<text id="sami atanah-li." style="transform: matrix(1,0,0,1,148,158)" >
+		<tspan x="0" y="125.3" class="t0">s</tspan><tspan  y="125.3" class="t0">a</tspan><tspan  y="125.3" class="t0">m</tspan><tspan  y="125.3" class="t0">i</tspan><tspan  y="125.3" class="t1"> </tspan><tspan  y="125.3" class="t2">a</tspan><tspan  y="125.3" class="t2">t</tspan><tspan  y="125.3" class="t2">a</tspan><tspan  y="125.3" class="t2">n</tspan><tspan  y="125.3" class="t2">a</tspan><tspan  y="125.3" class="t2">h</tspan><tspan  y="125.3" class="t3">-</tspan><tspan  y="125.3" class="t2">l</tspan><tspan  y="125.3" class="t2">i</tspan><tspan  y="125.3" class="t3">.</tspan><tspan  y="125.3" class="t3">
+</tspan>
+	</text>
+	<text id="Text layer 2" style="transform: matrix(1,0,0,1,176,-67)" >
+	</text>
+</svg>

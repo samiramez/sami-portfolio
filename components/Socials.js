@@ -3,31 +3,31 @@
 import Link from "next/link";
 
 //icons {
-  import {RiYoutubeLine,
-    RiInstagramLine,
+  import {RiWhatsappLine,
   RiFacebookLine,
-  RiGithubFill,
-  RiBehanceLine} from 'react-icons/ri'
+  RiGithubFill,RiLinkedinLine} from 'react-icons/ri'
 
   import {SiCodeforces} from 'react-icons/si'
 
 const Socials = () => {
   return (
   <div className="flex items-center gap-x-5 text-lg">
-    <Link href={''} className="hover:text-accent transition-all duration-300">
-      <RiYoutubeLine/>
-      </Link>  
-      <Link href={''} className="hover:text-accent transition-all duration-300">
-      <RiFacebookLine/>
-      </Link>
-      <Link href={''} className="hover:text-accent transition-all duration-300">
+      
+      
+      <Link href={'https://github.com/samiramez'} className="hover:text-accent transition-all duration-300">
       <RiGithubFill/>
       </Link>
-      <Link href={''} className="hover:text-accent transition-all duration-300">
-      <RiInstagramLine/>
+      <Link href={'https://www.linkedin.com/in/sami-atanah-li-96477a154/'} className="hover:text-accent transition-all duration-300">
+      <RiLinkedinLine/>
       </Link>
-      <Link href={''} className="hover:text-accent transition-all duration-300">
+      <Link href={'https://codeforces.com/profile/Captin'} className="hover:text-accent transition-all duration-300">
       <SiCodeforces/>
+      </Link>
+      <Link href={'https://www.facebook.com/sami.ramiz/'} className="hover:text-accent transition-all duration-300">
+      <RiFacebookLine/>
+      </Link>
+      <Link href={'https://wa.me/+962798028686'} className="hover:text-accent transition-all duration-300">
+      <RiWhatsappLine/>
       </Link>
   </div>
   );

@@ -8,13 +8,28 @@ import 'swiper/css/pagination';
 
 // icons
 import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
   RxArrowTopRight,
+  
 } from "react-icons/rx";
+
+import {
+  SiPostman,
+  SiTestinglibrary,
+  SiManageiq,
+} from 'react-icons/si';
+
+// import {
+//   CiDatabase
+// } from 'react-icons/ci';
+
+import {
+  MdOutlineDeveloperMode,
+  MdOutlineReportProblem
+} from 'react-icons/md';
+
+// import {
+//   VscServerEnvironment
+// } from 'react-icons/vsc';
 
 //improt required modules
 import { FreeMode, Pagination } from 'swiper';
@@ -22,29 +37,29 @@ import { FreeMode, Pagination } from 'swiper';
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <SiTestinglibrary />,
+    title: 'Software Testing and QA',
+    description: 'manual and automated software testing services to ensure the quality',
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <SiPostman />,
+    title: 'API Testing',
+    description: 'API testing and validation services using tools like Postman to ensure the proper functioning of APIs.',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <SiManageiq />,
+    title: 'Collaboration and Project Management',
+    description: 'project management and collaboration services using platforms.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <MdOutlineDeveloperMode />,
+    title: 'Programming and Development',
+    description: 'proficiency in various programming languages to offer development services.',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <MdOutlineReportProblem />,
+    title: 'Problem-Solving and Innovative Solutions',
+    description: 'problem-solving skills to tackle challenging projects and offer innovative solutions.',
   },
 ];
 

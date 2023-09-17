@@ -1,4 +1,3 @@
-
 // components
 import ServiceSlider from '../../components/ServiceSlider';
 import Bulb from '../../components/Bulb';
@@ -31,8 +30,10 @@ const Services = () => {
             animate='show'
             exit='hidden'
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-              eveniet dignissimos ditsinctio tempore harum laudantium.
+              I offer a range of services including software testing (manual and automated), 
+              API testing with tools like Postman, SQL-based database interactions, multi-language development, 
+              development environment setup (e.g., Visual Studio), project management with GitHub, and problem-solving for 
+              innovative solutions.
             </motion.p>
           </div>
           {/* slider */}

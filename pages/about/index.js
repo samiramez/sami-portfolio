@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 
 // icons
@@ -32,33 +33,33 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaJava />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaPython />,
-          <FaDatabase/>,
-          <SiPhpstorm/>,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaJava key="java" />,
+          <SiNextdotjs key="nextjs" />,
+          <SiFramer key="framer" />,
+          <FaPython key="python" />,
+          <FaDatabase key="database" />,
+          <SiPhpstorm key="phpstorm" />,
         ],
       },
       {
         title: 'UI/UX Design',
         icons: [
-        <FaFigma />,
-        <SiAdobexd />, 
-        <SiAdobephotoshop />,
-        <SiAdobeillustrator/>,
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />, 
+          <SiAdobephotoshop key="adobephotoshop" />,
+          <SiAdobeillustrator key="adobeillustrator" />,
       ],
       },
       {
         title: 'Platform',
         icons: [
-        <SiVisualstudio/>,
-        <SiVisualstudiocode/>,
-        <SiGit/>,
-        <SiMysql/>
+          <SiVisualstudio key="visualstudio" />,
+          <SiVisualstudiocode key="visualstudiocode" />,
+          <SiGit key="git" />,
+          <SiMysql key="mysql" />,
       ],
       },
     ],
@@ -166,7 +167,9 @@ const About = () => {
             initial='hidden'
             animate="show"
             exit='hidden'
+            // eslint-disable-next-line react/jsx-no-comment-textnodes
             className='max-2-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
+            // eslint-disable-next-line react/no-unescaped-entities
             2 years ago, i began freelancing as a developer. Since then, I've
             done remote work, consulted for startups, and
             collaborated on digital products for business and consumer use.
@@ -252,6 +255,7 @@ const About = () => {
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
+                      // eslint-disable-next-line react/jsx-key
                       return <div className='text-2xl text-white'>{icon}</div>;
                     })}
                   </div>

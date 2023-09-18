@@ -34,14 +34,13 @@ const Home = () => {
             animate="show"
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-
             I'm a versatile Software Engineer with extensive expertise in software testing, 
             covering both manual and automated methods, and proficient in SQL for efficient database interactions. 
             I have a strong foundation in  C#, HTML, CSS, JavaScript, VB, SQL, Python, and C++
             </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
+            <ProjectsBtn/>
           </div>
           <motion.div
             variants={fadeIn('down', 0.4)}
@@ -49,9 +48,9 @@ const Home = () => {
             animate="show"
             exit="hidden"
             className="hidden xl:flex"
+            href={'/work'}
           >
-
-            <ProjectsBtn />
+            <ProjectsBtn/>
           </motion.div>
         </div>
       </div>

@@ -169,7 +169,6 @@ const About = () => {
             exit='hidden'
             // eslint-disable-next-line react/jsx-no-comment-textnodes
             className='max-2-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            // eslint-disable-next-line react/no-unescaped-entities
             2 years ago, i began freelancing as a developer. Since then, I've
             done remote work, consulted for startups, and
             collaborated on digital products for business and consumer use.

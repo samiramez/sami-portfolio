@@ -159,7 +159,7 @@ const About = () => {
             initial='hidden'
             animate="show"
             exit='hidden'
-            className='h2'>
+            className='h3'>
             Captivating <span className='text-accent'>stories</span> birth magnificent development
           </motion.h2>
           <motion.p

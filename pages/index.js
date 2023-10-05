@@ -39,22 +39,7 @@ const Home = () => {
             I have a strong foundation in  C#, HTML, CSS, JavaScript, VB, SQL, Python, and C++
             </motion.p>
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn/>
-          </div>
-          <motion.div
-            variants={fadeIn('down', 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden xl:flex"
-            href={'/work'}
-          >
-            <ProjectsBtn/>
-          </motion.div>
-        </div>
-      </div>
-      {/* image */}
+           {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* bg img */}
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute
@@ -72,6 +57,23 @@ const Home = () => {
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]">
           <Avatar />
         </motion.div>
+      </div>
+          <div
+            className="flex justify-center xl:hidden relative">
+            <ProjectsBtn/>
+          </div>
+
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden xl:flex"
+            href={'/work'}
+          >
+            <ProjectsBtn/>
+          </motion.div>
+        </div>
       </div>
     </div>
 

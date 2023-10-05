@@ -32,8 +32,8 @@ const Work = () => {
             animate='show'
             exit='hidden'
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              "I'm a versatile software engineer with a Bachelor's degree in Software Engineering, known for my diverse portfolio. 
-              I've created everything from Morse code converters to desktop games and complex web applications."
+              I'm a versatile software engineer with a Bachelor's degree in Software Engineering, known for my diverse portfolio. 
+              I've created everything from Morse code converters to desktop games and complex web applications.
 {/*                
               showcasing my adaptability and technical skills across different domains.
               I'm passionate about exploring new opportunities and pushing the boundaries of technology. */}

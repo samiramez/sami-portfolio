@@ -5,19 +5,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/Snakegame.jpg',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/POS.jpg',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/Morse_Code.jpg',
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/Keylogger.jpg',
         },
       ],
     },
@@ -25,19 +25,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/paintbrush.jpg',
         },
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/tictac.jpg',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/GGsite.jpg',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/drone.jpg',
         },
       ],
     },
@@ -79,7 +79,7 @@ const WorkSlider = () => {
                   // eslint-disable-next-line react/jsx-key
                   <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'
                   key={index}>
-                    <div className='flex items-center justify-center relative overflow-hidden'>
+                    <div className='flex items-center justify-center relative overflow-hidden width=[1280] height=[720]'>
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt='' />
                       {/* overlay gradient */}

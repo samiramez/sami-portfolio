@@ -81,7 +81,7 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'PROGRAMMER - Freelance',
+        title: 'Programmer - Freelance',
         stage: '2021 - Present',
       },
       {
@@ -90,8 +90,8 @@ const aboutData = [
       },
       {
         
-        title: 'Field Training - Halawani-industrial company',
-        stage: '2019 - 2019',
+        title: 'Intern - Sitech',
+        stage: '2023 - 2023',
       },
     ],
   },

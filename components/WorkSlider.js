@@ -1,4 +1,12 @@
-// data
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper';
+import { BsArrowRight } from 'react-icons/bs';
+import Image from 'next/image';
+
 const workSlides = {
   slides: [
     {
@@ -6,18 +14,22 @@ const workSlides = {
         {
           title: 'title',
           path: '/Snakegame.jpg',
+          link: 'https://github.com/samiramez/MySnakeGame',
         },
         {
           title: 'title',
           path: '/POS.jpg',
+          link: 'https://github.com/samiramez/project',
         },
         {
           title: 'title',
           path: '/Morse_Code.jpg',
+          link: 'https://github.com/samiramez/MoresCode',
         },
         {
           title: 'title',
           path: '/Keylogger.jpg',
+          link: 'https://github.com/samiramez/My_Key_logger',
         },
       ],
     },
@@ -26,39 +38,27 @@ const workSlides = {
         {
           title: 'title',
           path: '/paintbrush.jpg',
+          link: 'https://github.com/samiramez/PaintBrush_project',
         },
         {
           title: 'title',
           path: '/tictac.jpg',
+          link: 'https://github.com/samiramez/tictoetac_game',
         },
         {
           title: 'title',
           path: '/GGsite.jpg',
+          link: 'https://github.com/samiramez/GG_WebSite',
         },
         {
           title: 'title',
           path: '/drone.jpg',
+          link: 'https://github.com/samiramez/MyDroneApplication'
         },
       ],
     },
   ],
 };
-
-//import swiper react components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-//import swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-
-//improt required modules
-import { Pagination } from 'swiper';
-
-//icons 
-import { BsArrowRight } from 'react-icons/bs'
-//next image
-import Image from 'next/image';
 
 const WorkSlider = () => {
   return (
@@ -74,37 +74,44 @@ const WorkSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
-              {slide.images.map((image, index) => {
+              {slide.images.map((image, imageIndex) => {
                 return (
-                  // eslint-disable-next-line react/jsx-key
-                  <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'
-                  key={index}>
-                    <div className='flex items-center justify-center relative overflow-hidden width=[1280] height=[720]'>
-                      {/* image */}
-                      <Image src={image.path} width={500} height={300} alt='' />
-                      {/* overlay gradient */}
-                      <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] 
-                      opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
-                      {/* title */}
-                      <div className='absolute bottom-0 translate-y-full
-                      group-hover:-translate-y-10 group-hover:xl:-translate-y-20
-                      transion-all duration-300'>
-                        <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                        {/* title part 1 */}
-                        <div className='delay-100'>LIVE</div>
-                        {/* title part 2 */}
-                        <div className='translate-y-[500%] group-hover:translate-y-0
-                        transition-all duration-300 delay-150'>
-                          PROJECT
+                  <div
+                    className='relative rounded-lg overflow-hidden flex items-center justify-center group'
+                    key={imageIndex}
+                  >
+                    <a
+                      href={image.link || '#'} // Use the provided link or '#' if none is provided
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className='flex items-center justify-center relative overflow-hidden width=[1280] height=[720]'>
+                        {/* image */}
+                        <Image src={image.path} width={500} height={300} alt='' />
+                        {/* overlay gradient */}
+                        <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] 
+                        opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+                        {/* title */}
+                        <div className='absolute bottom-0 translate-y-full
+                          group-hover:-translate-y-10 group-hover:xl:-translate-y-20
+                          transion-all duration-300'>
+                          <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                            {/* title part 1 */}
+                            <div className='delay-100'>LIVE</div>
+                            {/* title part 2 */}
+                            <div className='translate-y-[500%] group-hover:translate-y-0
+                              transition-all duration-300 delay-150'>
+                              PROJECT
+                            </div>
+                            {/* icon */}
+                            <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300
+                              delay-200'>
+                              <BsArrowRight />
+                            </div>
                           </div>
-                          {/* icon */}
-                        <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300
-                        delay-200'>
-                          <BsArrowRight/>
-                        </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 );
               })}
@@ -112,9 +119,8 @@ const WorkSlider = () => {
           </SwiperSlide>
         );
       })}
-    </Swiper >
+    </Swiper>
   );
 };
 
 export default WorkSlider;
-

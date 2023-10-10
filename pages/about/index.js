@@ -99,12 +99,13 @@ const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Electrical and Electromechanical Engineering Technology - Queen Noor Civil Aviation College',
-        stage: '2011',
+        title: 'Electrical and Electromechanical Engineering Technology  Queen Noor Civil Aviation College',
+        stage: '2019',
+        link: 'https://drive.google.com/file/d/1Jrn5SFZNQfyvmOuQotp5g-iHKZVF0IpA/view?usp=sharing'
       },
       {
         title: 'Software Engineering BA - Al Isra University',
-        stage: '2009',
+        stage: '2023',
       },
     ],
   },
@@ -112,12 +113,19 @@ const aboutData = [
     title: 'Participated',
     info: [
       {
-        title: 'FULL STACK DEVELOPMENT TRACK - Udacity',
+        title: 'Full Stack Development Track - Udacity',
         stage: '2022',
+        link: 'https://drive.google.com/file/d/1m7i14MDfKV1OiLECsyHTPX5t2RJykdwd/view?usp=sharing',
       },
       {
-        title: 'COMPLETE SQL COURSE - QAcart',
+        title: 'Complete SQL Course - QAcart',
         stage: '2023',
+        link: 'https://drive.google.com/file/d/1jCKFRMbW3YNFx2bNJcqCR2zx1nPpDVJj/view',
+      },
+      {
+        title: 'Selenium WebDriver - QAcart',
+        stage: '2023',
+        link: 'https://drive.google.com/file/d/1lM7hRzkQjRfnG5qHem9N87f01MYI4xzP/view?usp=sharing'
       }
       
     ]
@@ -248,7 +256,15 @@ const About = () => {
                 <div key={itemIndex}
                   className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
                   {/* title */}
-                  <div className='font-light mb-2 md:mb-0'>{item.title}</div>
+                  <div className='font-light mb-2 md:mb-0'>
+                {item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.title}
+                  </a>
+                ) : (
+                  item.title
+                )}
+              </div>
                   <div className='hidden md:flex'>-</div>
                   <div>{item.stage}</div>
                   <div className='flex gap-x-4'>
